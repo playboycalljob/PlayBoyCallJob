@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Bot Funnel</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+.chat{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+
+.page{
+    display:none;
+}
+
+.page.active{
+    display:block;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.title{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.headline{
+    font-size:18px;
+    margin-top:10px;
+}
+
+.details{
+    margin-top:10px;
+}
+
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.yes{background:#28a745;color:white;}
+.no{background:#dc3545;color:white;}
+
+.pay{
+    background:#007bff;
+    color:white;
+}
+
+.telegram{
+    text-align:center;
+    margin-top:30px;
+}
+
+.telegram img{
+    width:120px;
+}
+</style>
+</head>
+<body>
+
+<div class="chat">
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+<div class="box">
+<div class="title">🌟✨💎 👑 "প্লে বয় কল জব নেটওয়ার্কে আপনাকে স্বাগতম।" 👑 💎✨🌟</div>
+<div class="headline">🤝 অভিজাত পরিবারের নারী অতিথি ও আন্তর্জাতিক ভিজিটরদের জন্য বিশ্বস্ত ও ভদ্র পুরুষ সদস্যদের সংযুক্ত করার একটি বিশেষ নেটওয়ার্ক। 🤝</div>
+<div class="details">
+📋 **আপনার দায়িত্বসমূহ:**
+
+🔹 প্রাইভেট পার্টি, ইভেন্ট ও গেট-টুগেদারে উপস্থিত থাকা
+🔹 অতিথিদের সাথে ভদ্র ও পেশাদার আচরণ বজায় রাখা
+🔹 অতিথিদের স্বাচ্ছন্দ্য ও ইতিবাচক অভিজ্ঞতা নিশ্চিত করতে সহায়তা করা
+🔹 নির্ধারিত দায়িত্ব অনুযায়ী পেশাদার সেবা প্রদান করা
+🔹 প্রতিষ্ঠানের নীতিমালা, গোপনীয়তা ও শিষ্টাচার মেনে চলা
+
+💼 **সুবিধাসমূহ:**
+🔹 বিভিন্ন সামাজিক ও প্রিমিয়াম ইভেন্টে অংশগ্রহণের সুযোগ
+🔹 নতুন মানুষের সাথে পরিচিত হওয়ার সুযোগ
+🔹 অভিজ্ঞতা অর্জনের পাশাপাশি আয়ের সুযোগ
+
+❓ **আপনি কি এই সুযোগে আগ্রহী?** 👋
+
+</div>
+
+<button class="btn yes" onclick="nextPage(2)">হ্যাঁ</button>
+<button class="btn no">না</button>
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+<div class="box">
+<div class="title">🎯 আমাদের সাথে কাজ করলে যে সুবিধাগুলো পাবেন</div>
+<div class="headline">💰 আয় ও সুযোগ-সুবিধা:</div>
+<div class="details">
+🔹 প্রতি কাজে আয়: ১৫,০০০ – ২৫,০০০ টাকা
+🔹 বিশেষ ইভেন্টে অতিরিক্ত আয়ের সুযোগ
+🔹 ফ্লেক্সিবল সময়সূচি অনুযায়ী কাজের সুবিধা
+🔹 প্রিমিয়াম সামাজিক পরিবেশে অংশগ্রহণের সুযোগ
+🔹 নতুন মানুষের সাথে পরিচিত হওয়ার সুযোগ
+🔹 অভিজ্ঞতা ও যোগাযোগের পরিধি বৃদ্ধি করার সুযোগ
+🔹 যোগ্যতা ও পারফরম্যান্সের ভিত্তিতে আরও ভালো সুযোগ লাভের সম্ভাবনা
+
+✨ ভালো আয়ের পাশাপাশি একটি এক্সক্লুসিভ নেটওয়ার্কের অংশ হওয়ার সুযোগ। ✨
+</div>
+
+<button class="btn yes" onclick="nextPage(3)">করতে চাই</button>
+</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page3">
+<div class="box">
+<div class="title">📌 গুরুত্বপূর্ণ তথ্য:</div>
+<div class="headline">💳 এককালীন ভেরিফিকেশন ফি: ২০০ টাকা প্রযোজ্য ✅</div>
+<div class="details">
+📌 সদস্যপদ ও সুবিধাসমূহ:
+
+🔹 এককালীন ২০০ টাকা ভেরিফিকেশন ফি প্রদান করতে হবে
+🔹 রেজিস্ট্রেশন সম্পন্ন হলেই সিক্রেট গ্রুপ অ্যাক্সেস পাবেন
+🔹 ২৪ ঘণ্টার মধ্যে কাজ না পেলে রিফান্ড নেওয়ার সুযোগ থাকবে
+🔹 নিজের সময় অনুযায়ী কাজ বেছে নেওয়ার সুবিধা
+🔹 পছন্দ অনুযায়ী গেস্ট/ম্যাডাম নির্বাচন করতে পারবেন
+🔹 এটি শুধুমাত্র ওয়ান-টাইম ফি, একবারই প্রদান করতে হয়
+🔹 আপনি যদি সত্যিই কাজ করতে আগ্রহী হন, তাহলে ২০০ টাকা বড় কোনো বিষয় হওয়ার কথা নয়
+🔹 বর্তমানে বন্ধুদের সাথে সাধারণ আড্ডা দিলেও ২০০ টাকার বেশি খরচ হওয়া স্বাভাবিক
+</div>
+
+<button class="btn pay" onclick="nextPage(4)">
+পেমেন্ট করুন
+</button>
+</div>
+</div>
+
+<!-- PAYMENT -->
+<div class="page" id="page4">
+<div class="box">
+
+<h3>Payment Method</h3>
+
+<label>
+<input type="radio" name="pay">
+bKash - 01842151907
+</label>
+
+<br><br>
+
+<label>
+<input type="radio" name="pay">
+Nagad / Rocket - 01722144619
+</label>
+
+<br><br>
+
+<!-- INSTRUCTION TEXT -->
+<p style="margin-top:15px; font-size:14px; color:#333; line-height:1.6;">
+
+👉 পেমেন্ট করার জন্য উপরের যেকোনো নাম্বার কপি করে <b>Send Money</b> করুন।<br><br>
+
+👉 Send Money সম্পন্ন হলে নিচে আপনার <b>Transaction ID (TRX ID)</b> দিয়ে কনফার্ম করুন।<br><br>
+
+⚠️ ভুল TRX ID দিলে আপনার আবেদন গ্রহণ করা হবে না।
+
+</p>
+<br><br>
+
+<input
+type="text"
+placeholder="Transaction ID"
+style="width:100%;padding:10px;"
+>
+
+<button class="btn pay" onclick="nextPage(5)">
+Submit
+</button>
+
+</div>
+</div>
+
+<!-- TELEGRAM -->
+<div class="page" id="page5">
+<div class="box">
+
+<h2>ধন্যবাদ</h2>
+
+<p>আপনার তথ্য সফলভাবে গ্রহণ করা হয়েছে। নিচের মাধ্যমে যোগাযোগ করুন:</p>
+
+<div class="telegram">
+
+<!-- ADMIN SUPPORT -->
+<a href="https://t.me/Eliteserviceadmin" target="_blank"
+style="
+display:block;
+background:#0088cc;
+color:white;
+padding:12px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin-bottom:10px;
+text-align:center;
+">
+📩 Admin Support
+</a>
+
+<!-- PUBLIC GROUP -->
+<a href="https://t.me/elitepublicegroup" target="_blank"
+style="
+display:block;
+background:#28a745;
+color:white;
+padding:12px;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+margin-bottom:15px;
+text-align:center;
+">
+👥 Join Public Group
+</a>
+
+<!-- TELEGRAM LOGO -->
+<a href="https://t.me/Eliteserviceadmin" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+style="width:120px;margin-top:10px;">
+</a>
+
+<p style="margin-top:10px;">
+Telegram এ যোগাযোগ করতে লোগোতে ক্লিক করুন
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+function nextPage(page){
+document.querySelectorAll('.page')
+.forEach(p=>p.classList.remove('active'));
+
+document
+.getElementById('page'+page)
+.classList.add('active');
+}
+</script>
+
+</body>
+</html>
